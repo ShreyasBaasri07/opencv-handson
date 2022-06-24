@@ -33,8 +33,9 @@ int main()
 		imshow("Image", img);
 		imshow("Image HSV", imgHSV);
 		imshow("Image Mask", mask);
+		imwrite("/home/shreyas/opencv-cpp/color detection/output.jpeg",mask);
 		waitKey(1);
 	}
-
+	destroyAllWindows();
 	return 0;
 }
