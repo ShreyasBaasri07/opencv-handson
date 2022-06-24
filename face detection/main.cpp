@@ -24,6 +24,7 @@ int main()
         rectangle(img,faces[i].tl(),faces[i].br(),Scalar(255,0,255),3);
     }
     imshow("detected face image",img);
+    imwrite("/home/shreyas/opencv-cpp/face detection/face_detected.jpeg",img);
 	waitKey(0);
     return 0;
 }
